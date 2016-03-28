@@ -33,7 +33,7 @@ public:
 	void pop();									// Function to remove the top element of the stack.
 											// Postcondition: the stack is changed and the top element is removed from the stack.
 
-	void copyStack(const myStack<Type>& otherStack);				// Function to make a copy of otherStack.
+	void copyStack(const myStack<Type>& otherStack);					// Function to make a copy of otherStack.
 											// Postcondition: a copy of otherStack is created and assigned to this stack.
 
 	myStack(int stackSize = 100);							// Default constructor.
