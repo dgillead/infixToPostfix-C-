@@ -11,7 +11,7 @@ int main()
 	infixToPostfix infixExp;
 	std::string infix;
 	std::ifstream infile;
-	infile.open("C:\\Users\\Darnell\\Documents\\infixData.txt");
+	infile.open("insert file path here");
 
 	if (!infile)
 	{
