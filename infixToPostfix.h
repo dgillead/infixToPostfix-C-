@@ -8,36 +8,36 @@
 class infixToPostfix
 {
 private:
-	std::string infx = " ";												// String to store the infix expression.
-	std::string pfx = " ";												// String to store the postfix expression.
-	std::string finalpfx = " ";											// String to store the final postfix expression.
+	std::string infx = " ";						// String to store the infix expression.
+	std::string pfx = " ";						// String to store the postfix expression.
+	std::string finalpfx = " ";					// String to store the final postfix expression.
 public:
-	void getInfix(std::string infix);									// Function which stores infix expression.
-																		// Postcondition: infx = infix.
+	void getInfix(std::string infix);				// Function which stores infix expression.
+									// Postcondition: infx = infix.
 
-	void showInfix();													// Function which prints the infix expression.
+	void showInfix();						// Function which prints the infix expression.
 
-	void showPostfix();													// Function which prints the postfix expression.
-																		// Postcondition: finalpfx = covertToPostfix(infx), pfx = " ". 
+	void showPostfix();						// Function which prints the postfix expression.
+									// Postcondition: finalpfx = covertToPostfix(infx), pfx = " ". 
 
-	std::string convertToPostfix(std::string);							// Function which converts the infix expression to the postfix expression.
-																		// Postcondition: converted infix expression is returned.
+	std::string convertToPostfix(std::string);			// Function which converts the infix expression to the postfix expression.
+									// Postcondition: converted infix expression is returned.
 
-	bool isOperator(char op);											// Function which determines if character is an operator.
-																		// Postcondition: true if operator, false if not operator.
+	bool isOperator(char op);					// Function which determines if character is an operator.
+									// Postcondition: true if operator, false if not operator.
 
-	bool precedence(char op1, char op2);								// Function which determines the precedence of the operators.
-																		// Postcondition: true if op1 weight is great then or equal to op2 weight. 
-																		// false otherwise.
+	bool precedence(char op1, char op2);				// Function which determines the precedence of the operators.
+									// Postcondition: true if op1 weight is great then or equal to op2 weight. 
+									// false otherwise.
 		
-	bool isOperand(char operand);										// Function which determines if character is an operand.
-																		// Postcondition: true if operand, false if not operand.
+	bool isOperand(char operand);					// Function which determines if character is an operand.
+									// Postcondition: true if operand, false if not operand.
 
-	int operatorWeight(char op);										// Function which determines the weight of the operator (used to determine precedence.)
-																		// Postcondition: weight is returned.
+	int operatorWeight(char op);					// Function which determines the weight of the operator (used to determine precedence.)
+									// Postcondition: weight is returned.
 
-	infixToPostfix();													// Default constructor.
-																		// Postcondition: infx = " ", pfx = " ".
+	infixToPostfix();						// Default constructor.
+									// Postcondition: infx = " ", pfx = " ".
 };
 
 
