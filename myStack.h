@@ -86,7 +86,7 @@ bool myStack<Type>::isFullStack() const
 // Function to add newItem to the stack.
 // Postcondition: stack is changed and newItem is added to top of stack.
 template<class Type>
-inline void myStack<Type>::push(const Type & newItem)
+void myStack<Type>::push(const Type & newItem)
 {
 	if (!isFullStack())
 	{
